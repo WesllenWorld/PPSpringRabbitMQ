@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<pp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springrabbitmq.pp.Application",
+            "projectName": "pp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
