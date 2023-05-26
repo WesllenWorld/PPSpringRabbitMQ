@@ -1,0 +1,9 @@
+rabbitmq:
+  config:
+    hostname: jackal.rmq.cloudamqp.com
+    password: 23tHYgpvhomyo71JwcS4eWmF7VEryqQg
+    username: tirygekb
+    virtualHost: tirygekb
+    queueName: filaPedidos
+    exchangeName: filaExchange
+    routingKey: filaRoutingKey

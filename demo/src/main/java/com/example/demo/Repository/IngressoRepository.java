@@ -1,5 +1,9 @@
 package com.example.demo.Repository;
 
-public class IngressoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.Entity.Ingresso;
+
+public interface IngressoRepository extends JpaRepository<Ingresso, Long> {
     
 }

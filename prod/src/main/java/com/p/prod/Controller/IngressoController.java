@@ -1,4 +1,4 @@
-package com.example.demo.Controller;
+package com.p.prod.Controller;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Entity.Ingresso;
+import com.p.prod.Entity.*;;
 
 @RestController
 public class IngressoController {
