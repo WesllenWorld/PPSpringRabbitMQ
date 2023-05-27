@@ -1,4 +1,4 @@
-package com.p.prod.Config;
+package com.p.prod.config;
 
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

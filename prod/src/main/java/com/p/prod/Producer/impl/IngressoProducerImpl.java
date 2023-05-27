@@ -1,9 +1,9 @@
-package com.p.prod.Producer.impl;
+package com.p.prod.producer.impl;
 
-import com.p.prod.Config.MessagingProperties;
 //import com.p.prod.Producer.Entity.Ingresso;
-import com.p.prod.Producer.Producer;
-import com.p.prod.Entity.Ingresso;
+import com.p.prod.producer.Producer;
+import com.p.prod.config.MessagingProperties;
+import com.p.prod.entity.Ingresso;
 
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -15,7 +15,7 @@ import static lombok.AccessLevel.PRIVATE;
 @Service
 @RequiredArgsConstructor
 @FieldDefaults(level = PRIVATE, makeFinal = true)
-public class OrderProducerImpl implements Producer<Ingresso> {
+public class IngressoProducerImpl implements Producer<Ingresso> {
 
     RabbitTemplate customRabbitTemplate;
     MessagingProperties messagingProperties;

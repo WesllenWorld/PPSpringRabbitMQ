@@ -1,4 +1,4 @@
-package com.p.prod.Producer;
+package com.p.prod.producer;
 
 public interface Producer<T> {
 
