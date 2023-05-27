@@ -19,6 +19,26 @@
             "projectName": "demo",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConsumerApplication<cons>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.c.cons.ConsumerApplication",
+            "projectName": "cons",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProducerApplication<prod>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.p.prod.ProducerApplication",
+            "projectName": "prod",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

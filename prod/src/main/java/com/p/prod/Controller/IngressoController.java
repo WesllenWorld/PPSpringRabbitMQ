@@ -30,7 +30,8 @@ public class IngressoController {
 
         ingresso.setId(UUID.randomUUID().toString());
         ingressoProducer.produce(ingresso);
-
+        System.out.println("#### Message sent to queue : " + ingresso.toString());
         return ingresso;
+
     }
 }
