@@ -19,6 +19,6 @@ public class Ingresso {
     private int quantidade;
 
     public String toString(){
-        return "Ingresso: " + this.id + " " + this.nomeEvento + " " + this.preco + " " + this.quantidade;
+        return "Ingresso:\n" + this.id + "\n" + this.nomeEvento + "\n" + this.preco + "\n" + this.quantidade;
     }
 }

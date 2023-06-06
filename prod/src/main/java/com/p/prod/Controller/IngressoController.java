@@ -26,12 +26,12 @@ public class IngressoController {
 
     @PostMapping(path = "", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     @ResponseStatus(CREATED)
-    public Ingresso comprarIngresso(@RequestBody Ingresso ingresso) {
+    public void comprarIngresso(@RequestBody Ingresso ingresso) {
 
         ingresso.setId(UUID.randomUUID().toString());
         ingressoProducer.produce(ingresso);
-        System.out.println("#### Message sent to queue : " + ingresso.toString());
-        return ingresso;
+        System.out.println("#### Mensagem enviada para a fila : " + ingresso.toString());
+        
 
     }
 }

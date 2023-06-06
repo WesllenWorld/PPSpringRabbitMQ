@@ -20,7 +20,8 @@ public class IngressoConsumerImpl implements Consumer<Ingresso> {
     @Override
     @RabbitListener(queues = QUEUE_NAME)
     public void consume(Ingresso ingresso) {
-
-        System.out.printf("#### Message received from queue : %s\n", ingresso.toString());
+        System.out.printf("#### Ingresso comprado com sucesso: %s\n", ingresso.toString());
     }
+
+
 }

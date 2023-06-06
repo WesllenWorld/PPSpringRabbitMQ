@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConsumerApplication",
+            "request": "launch",
+            "mainClass": "com.c.cons.ConsumerApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-Application<pp>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -28,7 +35,8 @@
             "mainClass": "com.c.cons.ConsumerApplication",
             "projectName": "cons",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57549 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=cons"
         },
         {
             "type": "java",
@@ -38,7 +46,8 @@
             "mainClass": "com.p.prod.ProducerApplication",
             "projectName": "prod",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57550 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=prod"
         }
     ]
 }
